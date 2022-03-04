@@ -35,13 +35,13 @@ void ofApp::draw(){
     
     if (ofGetFrameNum() < 1000) {
             
-//        comp1.draw();
-//
-//        ofScale(0.5);
-//        ofTranslate(0, centerY);
-//        comp2.draw();
+        comp1.draw();
+
+        ofScale(0.5);
+        ofTranslate(0, centerY);
+        comp2.draw();
         
-        myClass1.draw();
+        // myClass1.draw();
         
         
                 
