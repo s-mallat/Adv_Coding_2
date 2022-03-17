@@ -14,7 +14,7 @@ Openframeworks Boids Simulations.
 ----------
 
 ## Homework 03: https://youtu.be/X4WsP7uBUvc
-My Python Riddle with a bit of **GLSL & sound added
+My Python Riddle with a bit of *GLSL & sound added
 
 ----------
 
