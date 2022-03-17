@@ -57,7 +57,7 @@ void ofApp::audioOut(ofSoundBuffer& output){
     std::size_t outChannels = output.getNumChannels();
     for (int i = 0; i < output.getNumFrames(); ++i){
 
-        output[i * outChannels] = myOsc1.sinewave(200 + (myOsc2.coswave(0.15) * 100) * myOsc3.coswave(0.20) * 20 + myOsc4.sinewave(0.10)) * myOsc5.sinewave(40) + myOsc6.sinewave(200);
+        output[i * outChannels] = myOsc1.sinewave(200 + (myOsc2.coswave(0.15) * 100) * myOsc3.coswave(0.20) * 20 * myOsc4.sinewave(ofGetMouseY()/50)) * myOsc5.sinewave(ofGetMouseX()/50) + myOsc6.sinewave(200);
         output[i * outChannels + 1] = output[i * outChannels];
 
     }
