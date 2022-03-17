@@ -5,9 +5,9 @@ Video: https://youtu.be/YR5noUPjBWM </h3>
 <p>Description: Openframeworks exercise</p>
 <br>
 
-<h3>Homework 2 (Openframeworks)<br>
+<h3>Homework 2<br>
 Video: https://youtu.be/bXepAub075U </h3>
-<p>This homework was created in collaboration between me, Alexandre, Ryan, and Lea</p>
+<p>Openframeworks Boids Simulations. This homework was created in collaboration between me, Alexandre, Ryan, and Lea</p>
 <br>
 
 <h3>Homework 3 (Python) <br>
