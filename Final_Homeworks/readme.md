@@ -5,7 +5,7 @@
 <br>
 
 <h3>Homework 2 (Openframeworks)</h3>
-<h3>Video Link: </h3>
+<h3>Video Link: https://youtu.be/bXepAub075U </h3>
 <p>This homework was created in collaboration between me, Alexandre, Ryan, and Lea</p>
 <br>
 
