@@ -13,8 +13,6 @@
 
 ![5](https://user-images.githubusercontent.com/92052904/158810309-4c9dbe5a-cf74-4854-8b95-8461f705a11b.png)
 
-![6](https://user-images.githubusercontent.com/92052904/158810314-57af4caa-3482-4097-a334-64e790cf58a7.png)
-
 ![7](https://user-images.githubusercontent.com/92052904/158810316-78e36b30-8647-471f-9202-44a541ee304b.png)
 
 ![8](https://user-images.githubusercontent.com/92052904/158810318-ceb4ac6f-6387-4df9-9bc4-e24b04dca42f.png)
