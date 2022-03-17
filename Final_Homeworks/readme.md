@@ -12,7 +12,7 @@ Video: https://youtu.be/bXepAub075U </h3>
 
 <h3>Homework 3<br>
 Video: https://youtu.be/X4WsP7uBUvc </h3>
-<p>My Python Riddle with a bit of GLSL added </p>
+<p>My Python Riddle with a bit of GLSL & sound added </p>
 <br>
 
 <h3>Homework 4 (Python)<br>
