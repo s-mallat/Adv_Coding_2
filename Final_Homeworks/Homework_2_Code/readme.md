@@ -1,4 +1,4 @@
-# homework 02
+# homework 02: https://youtu.be/bXepAub075U
 ## Photo Documentation
 
 ![6](https://user-images.githubusercontent.com/92052904/158809830-927cf5bc-d893-450f-a5e2-8bdaf91d7e90.png)
