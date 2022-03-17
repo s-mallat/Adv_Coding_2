@@ -15,6 +15,6 @@ Video: https://youtu.be/X4WsP7uBUvc </h3>
 <p>My Python Riddle with a bit of GLSL & sound added </p>
 <br>
 
-<h3>Homework 4 (Python)<br>
-Video: </h3>
+<h3>Homework 4<br>
+Video: https://youtu.be/qF0f8xUpQAY </h3>
 <p>Python - Numpy</p>
