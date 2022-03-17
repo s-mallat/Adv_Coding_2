@@ -10,9 +10,9 @@ Video: https://youtu.be/bXepAub075U </h3>
 <p>Openframeworks Boids Simulations. This homework was created in collaboration between me, Alexandre, Ryan, and Lea</p>
 <br>
 
-<h3>Homework 3 (Python) <br>
+<h3>Homework 3<br>
 Video: https://youtu.be/X4WsP7uBUvc </h3>
-<p>My Riddle created with Python and GLSL </p>
+<p>My Python Riddle with a bit of GLSL added </p>
 <br>
 
 <h3>Homework 4 (Python)<br>
