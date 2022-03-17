@@ -1,9 +1,8 @@
-<h1>Final Homeworks</h1>
+# Final Homeworks
 
-<h3>Homework 1<br>
-Video: https://youtu.be/YR5noUPjBWM </h3>
-<p>Description: Openframeworks exercise</p>
-<br>
+## Homework 1
+** Video: https://youtu.be/YR5noUPjBWM **
+Description: Openframeworks exercise
 
 <h3>Homework 2<br>
 Video: https://youtu.be/bXepAub075U </h3>
