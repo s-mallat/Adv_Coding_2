@@ -1,19 +1,14 @@
 # Final Homeworks
 
-## Homework 1
-** Video: https://youtu.be/YR5noUPjBWM **
-Description: Openframeworks exercise
+## Homework 01: https://youtu.be/YR5noUPjBWM
+Openframeworks Exercise - Recreating a sketch from last term
 
-<h3>Homework 2<br>
-Video: https://youtu.be/bXepAub075U </h3>
-<p>Openframeworks Boids Simulations. This homework was created in collaboration between me, Alexandre, Ryan, and Lea</p>
-<br>
+## Homework 02: https://youtu.be/bXepAub075U
+Openframeworks Boids Simulations. 
+*This homework was created in collaboration between me, Alexandre, Ryan, and Lea
 
-<h3>Homework 3<br>
-Video: https://youtu.be/X4WsP7uBUvc </h3>
-<p>My Python Riddle with a bit of GLSL & sound added </p>
-<br>
+## Homework 03: https://youtu.be/X4WsP7uBUvc
+My Python Riddle with a bit of **GLSL & sound added
 
-<h3>Homework 4<br>
-Video: https://youtu.be/qF0f8xUpQAY </h3>
-<p>Python - Numpy</p>
+## Homework 4: https://youtu.be/qF0f8xUpQAY
+Python Homework - exploring Numpy
