@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		PLAY!	
+	</title>
+  	<style>
+		body {
+			margin: 0px;
+			background-color: #000000;
+			overflow: hidden;
+		}
+	</style>
+
+     <script>window.onerror = function(error, url, line) {parent.postMessage(["console", "❌ -- [ERROR] -- ❌ -- ⚠️ " + error], "*")};var cl = console.log;console.log = function () {var msg = [...arguments].join();parent.postMessage(["console", msg], "*");  }  </script><script crossorigin src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js">
+</script>
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+</head>
+
+<body>
+    <!-- <audio controls>
+        <source src="sound.wav" />
+      </audio> -->
+
+	<script id="vertexShader" type="x-shader/x-vertex">
+		void main() 
+        { 
+            gl_Position = vec4( position, 1.0 ); 
+        }
+    </script>
+
+	<script id="fragmentShader" type="x-shader/x-fragment">
+
+        precision mediump float;
+        
+        uniform vec2 resolution;
+        uniform vec2 mouse;
+        uniform highp float time;
+        
+        
+        float line(vec2 normalised_Coordinate, float funct) 
+        {
+            return step(funct,normalised_Coordinate.y)-step(funct,normalised_Coordinate.y-3.05);
+        }
+        
+        float random(vec2 normalised_Coordinate, float funct) 
+        {
+            return step(funct,normalised_Coordinate.y)-step(funct,normalised_Coordinate.y-0.05);
+        }
+        
+        void main(){
+            
+        	vec2 pos = 2.5 * gl_FragCoord.xy/resolution;
+ 
+        	
+            //float y = 0.5 * (sin(pos.x * 4.28) * sin(time) * tan(0.5 + time));
+            //float y = cos(pos.x * 4.28) * sin(time * 0.5) + cos(pos.y * 4.28);
+            float y = cos(pos.x * 7.28) * sin(time * 1.5) * cos(pos.y * 4.28);
+            //float y = cos(pos.x * 4.28) * sin(time * 0.5) + cos(pos.y * 4.28) / atan(pos.y * pos.x);
+
+
+                        vec3 color = vec3(y);
+
+            
+            // Plot a line
+
+            float lines = line(cos(pos) * 0.02, sin(sin(y)) - tan(0.2));
+            float lines2 = line(acos(pos * time) * 0.1, cos(sin(y*0.2)) - atan(y));
+            float lines3 = line(atan(pos + 0.2 * time), cos(y*10.2) * mouse.x);
+            
+            color = vec3(lines  * mouse.x/0.03,lines2,lines3 * mouse.x);
+        	gl_FragColor = vec4(color,0.2);
+        }
+
+</script>
+	<script type="module">
+        
+        import * as THREE from 'https://threejs.org/build/three.module.js';
+        import Stats from 'https://threejs.org/examples/jsm/libs/stats.module.js';
+
+		var pixel_resolution = 2;
+		var container, stats;
+		var camera, scene, renderer;
+		var uniforms;
+
+        var audio = new Audio("sound.wav");
+        //audio.volume = 0.2;
+        audio.play();
+      
+		init();
+		animate();
+        
+        function init() { 
+            camera = new THREE.Camera();
+            camera.position.z = 1;
+
+            scene = new THREE.Scene();
+            var geometry = new THREE.PlaneBufferGeometry(2, 2);
+            
+            uniforms = { time: { type: 'f', value: 1.0 }, resolution: { type: 'v2', value: new THREE.Vector2() }, mouse: {type: "v2", value: new THREE.Vector2()}};
+            var material = new THREE.ShaderMaterial({ uniforms: uniforms, vertexShader: document.getElementById('vertexShader').textContent, fragmentShader: document.getElementById('fragmentShader').textContent });
+            
+            var mesh = new THREE.Mesh(geometry, material);
+            
+            scene.add(mesh);
+
+            renderer = new THREE.WebGLRenderer();
+            renderer.setPixelRatio(window.devicePixelRatio / pixel_resolution);
+            document.body.appendChild(renderer.domElement);
+            onWindowResize();
+            window.addEventListener('resize', onWindowResize, false);
+            window.addEventListener('mousemove', onMouseMove, false);
+        }
+
+        function onWindowResize(event) {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            uniforms.resolution.value.x = renderer.domElement.width;
+            uniforms.resolution.value.y = renderer.domElement.height;
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            render();
+        }
+
+        function onMouseMove( event ) {
+            uniforms.mouse.value.x = 2 * ( event.clientX / window.innerWidth );
+            uniforms.mouse.value.y = 2 * ( 1-(event.clientY) / window.innerHeight
+            );
+        }
+
+        function render() {
+            uniforms.time.value += 0.01;
+            renderer.render(scene, camera);
+            }
+
+</script>
+</body>
+</html>
