@@ -1,6 +1,7 @@
 <h1>Final Homeworks</h1>
 
-<h3>Homework 1 (Openframeworks)</h3>
+<h3>Homework 1</h3>
+<p>Simple Openframeworks exercise to recreate a sketch from last term</p>
 <br>
 <h3>Homework 2 (Openframeworks)</h3>
 <br>

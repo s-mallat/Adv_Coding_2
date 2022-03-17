@@ -41,12 +41,8 @@ class ofApp : public ofBaseApp{
         
         maxiOsc myOsc1;
         maxiOsc myOsc2;
-    maxiOsc myOsc3;
-    maxiOsc myOsc4;
-    maxiOsc myOsc5;
-    maxiOsc myOsc6;
-        maxiSample mySound;
-        float wave;
-        float freq;
-		
+        maxiOsc myOsc3;
+        maxiOsc myOsc4;
+        maxiOsc myOsc5;
+        maxiOsc myOsc6;
 };

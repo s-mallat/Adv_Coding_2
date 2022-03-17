@@ -3,7 +3,6 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofBackground(0);
-    //ofSetBackgroundAuto(false);
     ofSetCircleResolution(100);
     ofSetFrameRate(80);
     ofSetRectMode(OF_RECTMODE_CENTER);
@@ -32,15 +31,10 @@ void ofApp::draw(){
     theta = theta + .03;
     amplitude = 200;
     frequency = 0.01;
-    
-    // Waves
-    
         
     time = ofGetElapsedTimef();
     
-    
     ofNoFill();
-
     ofSetColor(157, 70);
     
     for (int i = 0; i < 5; i++) {
@@ -61,23 +55,11 @@ void ofApp::draw(){
 
 void ofApp::audioOut(ofSoundBuffer& output){
     std::size_t outChannels = output.getNumChannels();
-    freq = 100;
-    
-//    osc1.sinewave(200 + (osc2.sinewave(0.15) * 100.0) *     osc3.sinewave(0.20) * 20) + osc4.sinewave(0.10) * 4 + osc5.sinewave(40) + osc6.sinewave(200);
-    
- //   myOsc1.sinewave(sin(myOsc2.coswave(freq)*0.05) * 70) * 10;
     for (int i = 0; i < output.getNumFrames(); ++i){
 
         output[i * outChannels] = myOsc1.sinewave(200 + (myOsc2.coswave(0.15) * 100) * myOsc3.coswave(0.20) * 20 + myOsc4.sinewave(0.10)) * myOsc5.sinewave(40) + myOsc6.sinewave(200);
         output[i * outChannels + 1] = output[i * outChannels];
-        
-        //Hold the values so the draw method can draw them
-//        waveform[waveIndex] =  output[i * outChannels];
-//        if (waveIndex < (ofGetWidth() - 1)) {
-//            ++waveIndex;
-//        } else {
-//            waveIndex = 0;
-//        }
+
     }
 }
 
