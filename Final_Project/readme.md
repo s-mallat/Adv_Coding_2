@@ -1,6 +1,8 @@
 # Final Project
 
-## Video: https://youtu.be/b8uxJmgZi5I
+## Video Link: https://youtu.be/b8uxJmgZi5I
+
+
 
 ## Project Description:
 
@@ -9,6 +11,7 @@ For my final project, I used OpenFrameworks to create an interactive art piece. 
 For the visual design itself, a 2D space is created upon activating the project with circles moving around the screen in a pattern. As these objects move, their sizes change and so do the fill colors with the mouse movement. At the top left corner, I added GUI options for different sounds and one button called ‘FREEZE.’ This button freezes a few parts of the frame such as transformations, while allowing others to normally work such as, color animations. I originally created this effect by mistake but later decided to keep it as the results were quite interesting and fun to look at. Moving on, the second composition is a 3D space that appears to be flat on first glance. This space includes hundreds of tiny spheres that move around as waves. Unlike the first composition, this space contains camera controls, therefore, it is possible to zoom, rotate, and orbit around. Also, moving the mouse around the screen changes the position and color of these spheres and adds dimensionality to the space.  The third and final composition is a full 3D space with materiality and lighting enabled to add depth. Unlike the other compositions, I created this one with no pre-defined shape in mind. I was inspired by 2D graphics and John Whitney designs that we studied about last term, and I wanted to create something similar. Therefore, this composition doesn’t follow a specific direction or create a specific shape. As the mouse moves, so does the structure that is created. It is constantly shifting and changing forms as well as colors and sizes. 
 
 Moving on, I think the most challenging part about creating this project was designing the code itself rather than the visuals. My project contained multiple parent and child classes that use inheritance and sometimes getting all the code to work together was very difficult and I had a lot of failed attempts along the way. However, I would say that every step through creating this project was a lot of fun for me. I started working on my final project around week three or four of this term by creating simple weekly OF projects to practice and learn C++. I was determined to do better compared to last term; therefore, I focused a lot on how to create a consistent and structured project that can incorporate concepts from this term and last term as well. Overall, I am happy with the direction and the scope the project, as it is the result of weeks of constant practice. I am looking forward to making more interesting designs in the future, and hopefully dive more into the world of making digital sound as it is a subject that I am very much interested in. 
+
 
 
 ## Photo Documentation
