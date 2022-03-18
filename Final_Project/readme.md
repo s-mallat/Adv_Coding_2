@@ -1,6 +1,6 @@
 # Final Project
 
-## Video:
+## Video: https://youtu.be/b8uxJmgZi5I
 
 ## Photo Documentation
 
