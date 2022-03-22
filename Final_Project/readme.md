@@ -4,7 +4,7 @@
 
 
 
-## Project Description:
+## Project Description: [Edit: A bit more detailed than PDF]
 
 For my final project, I used OpenFrameworks to create an interactive art piece. The scope of this piece includes sound, GUI, camera control, 2D and 3D graphics all weaved through an intricately designed space with each element being called at different time intervals. My project consists of three compositions transitioning from a 2D space to a fully 3D space. The way I designed this project is twofold, the first is the way the code is designed and the second is the actual space and what it contains.
 
